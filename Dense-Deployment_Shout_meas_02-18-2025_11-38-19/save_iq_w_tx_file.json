@@ -1,0 +1,27 @@
+[
+ {
+    "cmd": "save_iq_w_tx",
+    "sync": true,
+    "timeout": 30,
+
+    "nsamps": 65536,
+
+    "wotxrepeat": 0,
+    
+    "txrate": 56e6,
+    "txfreq": 3415e6,
+    "txgain": {"fixed": 85.0},
+    "txsamps": {"file": "/local/repository/shout/signal_library/bandwidth-dd.iq"},
+    "txwait": 3,
+    "use_lo_offset": true,
+
+    "rxrate": 56e6,
+    "rxfreq": 3415e6,
+    "rxgain": {"fixed": 70.0},
+    "rxrepeat": 1,
+    "rxwait": {"min": 50, "max": 2000, "res": "ms"},
+
+    "txclients": ["cnode-ebc-dd-b210", "cnode-mario-dd-b210", "cnode-ustar-dd-b210", "cnode-guesthouse-dd-b210", "cnode-moran-dd-b210"],
+    "rxclients": ["cnode-ebc-dd-b210", "cnode-mario-dd-b210", "cnode-ustar-dd-b210", "cnode-guesthouse-dd-b210", "cnode-moran-dd-b210"]
+ }
+]
